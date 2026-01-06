@@ -1,0 +1,3 @@
+SELECT * FROM Users Limit 3;
+SELECT * FROM Users Limit 3 OFFSET 2;
+SELECT * FROM Users Limit 3 OFFSET 2;

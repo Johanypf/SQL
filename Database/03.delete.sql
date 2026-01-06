@@ -1,0 +1,2 @@
+
+DELETE FROM Users WHERE id = 7;

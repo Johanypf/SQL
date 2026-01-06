@@ -1,0 +1,8 @@
+
+SELECT COUNT(*) FROM Users; -- 10
+
+SELECT COUNT(age) FROM Users; -- 10
+SELECT COUNT(DISTINCT age) FROM Users; -- 10
+
+SELECT COUNT(*) FROM Users WHERE age > 50; -- 5
+SELECT COUNT(age) FROM Users WHERE age > 50; -- 5w

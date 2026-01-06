@@ -1,0 +1,1 @@
+SELECT  name, init_date AS "Fecha de inicio" From Users WHERE age between 18 and 30;

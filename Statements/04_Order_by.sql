@@ -1,0 +1,9 @@
+SELECT * FROM Users ORDER BY age;
+
+SELECT * FROM Users ORDER BY age DESC;
+
+SELECT * FROM Users ORDER BY age DESC, name ASC;
+
+
+
+SELECT * FROM Users ORDER BY age DESC, name ASC LIMIT 10 OFFSET 20;

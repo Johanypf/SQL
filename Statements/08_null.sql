@@ -1,0 +1,3 @@
+SELECT * FROM Users WHERE emais is NULL;
+SELECT * FROM Users WHERE emaiL IS  NOT NULL;
+SELECT * FROM Users WHERE emaiL IS  NOT NULL AND Age = 28;

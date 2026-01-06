@@ -1,0 +1,2 @@
+    DROP TABLE Persons6;
+    

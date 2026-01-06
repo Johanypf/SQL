@@ -1,0 +1,1 @@
+SELECT SUM(*) FROM Users; -- 10

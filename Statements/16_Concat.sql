@@ -1,0 +1,1 @@
+SELECT CONCAT(IFNULL(name," ")," ",IFNULL(surname," "))  AS "FULL NAME" From Users;

@@ -1,0 +1,10 @@
+
+SELECT *,
+CASE  
+    WHEN age > 18 THEN "MAYOR DE EDAD"
+    ELSE "MENOR DE EDAD"
+END AS MAYOR_MENOR
+FROM Users;
+
+
+

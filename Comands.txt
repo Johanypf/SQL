@@ -1,0 +1,89 @@
+
+mysql -u tu_usuario -p
+
+USE nombre_db;
+
+SHOW TABLES;
+
+ DESC usuarios;
+
+- Ver todos los datos de la tabla 'usuarios'
+
+SELECT * FROM usuarios;
+CREAT TABLE
+
+DESCRIBE name_table
+
+
+show create table products;
+describe products;
+
+Borras Toda Tabla ****\
+drop Table clients;
+
+alter table test add column price float;
+Alter table test drop column price;
+Alter table test add column price float first;
+Alter table test modify column price decimal(10,3); 
+Alter table test rename column price to prices;
+Alter table test rename to tests;
+Alter table test modify column prices decimal(10,3) not null default 10;
+
+INSERT INTO products(name,slug) values ("Esfero","ES-2025");
+Show warnings;
+
+INSERT INTO products(name,slug) values("Esfero","ES-2025") 
+ON DUPLICATE KEY UPDATE description = \'93ejecutado on Dupplicate key\'94;\
+
+
+Update products set price = rand() *100
+
+INSERT IGNORE INTO products (SKU, name, slug, description, price) VALUES ('3401391', 'Heavy Duty Steel Computer', 'heavy-duty-steel-computer', 'Sample description', 99.99);\
+
+SELECT COUNT(*) FROM products;
+
+mysql -u usuario -p -D nombre_bd < insert_products.sql\
+
+
+SELECT * FROM products WHERE price < 100;
+SELECT name FROM clients WHERE name LIKE 'Mr.%';
+SELECT * FROM bill_products WHERE product_id IN (825, 500, 1986);
+SELECT * FROM bill_products WHERE date_added BETWEEN '2024-09-24' AND '2024-09-30';
+SELECT name FROM clients WHERE RAND() < 0.01;
+
+
+
+SELECT * FROM clients WHERE name LIKE 'Mr.%' AND email LIKE '%@domain.com';
+
+SELECT * FROM clients LIMIT 1 \\G\
+ 
+select name  from clients WHERE name like 'Mr. C%III';
+
+ update clients set phone_number = "+57302685465" Where client_id =10 limit 1;
+
+update clients
+set phone_number = '525512345678'
+where client_id = 19
+limit 1;
+
+
+UPDATE nombre_de_tabla
+SET columna = nuevo_valor
+
+WHERE condiciones
+
+
+
+update clients
+set phone_number = null
+where (name like 'Laura' or name like 'Claire') and phone_number is not null;
+
+alter table products
+add column stock integer not null default 0 after price;
+
+update products
+set stock = round(rand()*100);
+
+update products
+set stock = stock - 3
+where product_id = 8;
