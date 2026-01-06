@@ -44,3 +44,7 @@ JOIN lenguages ON Users_lenguages.language_id = lenguages.lenguage_id;
 SELECT Users.name, lenguages.name FROM Users_lenguages
 JOIN Users ON Users_lenguages.user_id = Users.user_id
 JOIN lenguages ON Users_lenguages.language_id = lenguages.lenguage_id;
+
+
+SELECT usuarios.nombre, pedidos.total FROM usuarios
+INNER JOIN pedidos ON usuarios.id = pedidos.usuario_id
